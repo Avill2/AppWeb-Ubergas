@@ -17,5 +17,8 @@ module.exports = {
     DetPedPrecioUnitario:{
       type: "Number"
     },
+    PedidoId:{
+      model:"Pedido"
+    },
   },
 };

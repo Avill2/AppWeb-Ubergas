@@ -24,6 +24,9 @@ module.exports = {
     },
     PersonaId:{
       model:"Persona"
+    },
+    DistribuidorId:{
+      model:"Distribuidor"
     }
   },
 };

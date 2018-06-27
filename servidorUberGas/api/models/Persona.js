@@ -25,10 +25,15 @@ module.exports = {
     Estado:{
       type: "Number"
     },
-    Usuario:{
+    UsuariosPersona:{
       collection:"Usuario",
       via:"PersonaId"
     },
-    
+    ClientId:{
+      model:"Cliente"
+    },
+    VendedId:{
+      model:"Vendedor"
+    },
   },
 };

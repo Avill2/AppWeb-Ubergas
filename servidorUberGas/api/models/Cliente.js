@@ -10,6 +10,15 @@ module.exports = {
     tipoCliente:{
       type:"String"
     },
+    Clientes:{
+      collection:"Persona",
+      via:"ClientId"
+    },
+
+    PedidosCli:{
+      collection:"Pedido",
+      via:"ClientePedido"
+    },
   },
 };
 

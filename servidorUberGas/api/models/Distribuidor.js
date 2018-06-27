@@ -28,5 +28,13 @@ module.exports = {
     DistriEstado:{
       type: "Number"
     },
+    UsuariosDistri:{
+      collection:"Distribuidor",
+      via:"DistribuidorId"
+    },
+    vendedorDistribuidor:{
+      collection:"Vendedor",
+      via:"DistribuidorId"
+    },
   },
 };

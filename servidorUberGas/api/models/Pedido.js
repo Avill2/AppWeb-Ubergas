@@ -20,5 +20,15 @@ module.exports = {
     Estado:{
       type: "Number"
     },
+    ClientePedido:{
+      model:"Cliente"
+    },
+    VendedorPedidido:{
+      model:"Vendedor"
+    },
+    PedidoDetalle:{
+      collection:"DetallePedido",
+      via:"PedidoId"
+    },
   },
 };

@@ -16,6 +16,18 @@ module.exports = {
     EstadoVendedor:{
       type: "Number"
     },
+
+    Clientes:{
+      collection:"Persona",
+      via:"VendedId"
+    },
+    PedidosVend:{
+      collection:"Pedido",
+      via:"VendedorPedido"
+  },
+    DistribuidorId:{
+      model:"Distribuidor"
+    },
   },
 };
 
