@@ -7,25 +7,42 @@
 
 module.exports = {
   attributes: {
-    Cedula:{
+    id:{
+      type:"number"
+    },
+    nombre:{
+      type:"string"
+    },
+    apellido:{
+      type: "string"
+    },
+    telefono:{
+      type:"number"
+    },
+    email:{
+      type:"string"
+    },
+    estado:{
+      type: "number"
+    },
+    cedula:{
       type:"Number"
     },
-    UbicacionVendedor:{
+    ubicacionVendedor:{
       type:"String"
     },
-    EstadoVendedor:{
+    estadoVendedor:{
       type: "Number"
     },
 
-    Clientes:{
-      collection:"Persona",
-      via:"VendedId"
+    usuarioVend:{
+      model:"usuario",
     },
-    PedidosVend:{
+    pedidosVend:{
       collection:"Pedido",
       via:"VendedorPedido"
   },
-    DistribuidorId:{
+    distribuidorId:{
       model:"Distribuidor"
     },
   },

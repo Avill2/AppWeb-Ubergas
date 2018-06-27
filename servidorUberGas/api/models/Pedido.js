@@ -8,27 +8,27 @@
 module.exports = {
 
   attributes: {
-    PedidoId:{
-      type:"Number"
+    pedidoId:{
+      type:"number"
     },
-    PedidoFechaHora:{
-      type:"Date"
+    pedidoFechaHora:{
+      type:"date"
     },
-    UbicacionPedido:{
-      type: "String"
+    ubicacionPedido:{
+      type: "string"
     },
-    Estado:{
-      type: "Number"
+    estado:{
+      type: "number"
     },
-    ClientePedido:{
-      model:"Cliente"
+    clientePedido:{
+      model:"cliente"
     },
-    VendedorPedidido:{
-      model:"Vendedor"
+    vendedorPedido:{
+      model:"vendedor"
     },
-    PedidoDetalle:{
-      collection:"DetallePedido",
-      via:"PedidoId"
+    pedidoDetalle:{
+      collection:"detallePedido",
+      via:"pedidoId"
     },
   },
 };

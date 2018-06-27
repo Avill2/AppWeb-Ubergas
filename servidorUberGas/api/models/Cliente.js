@@ -7,17 +7,30 @@
 module.exports = {
 
   attributes: {
-    tipoCliente:{
-      type:"String"
+    nombre: {
+      type: "string"
     },
-    Clientes:{
-      collection:"Persona",
-      via:"ClientId"
+    apellido: {
+      type: "string"
     },
-
-    PedidosCli:{
-      collection:"Pedido",
-      via:"ClientePedido"
+    telefono: {
+      type: "number"
+    },
+    email: {
+      type: "string"
+    },
+    estado: {
+      type: "number"
+    },
+    tipo: {
+      type: "string"
+    },
+    usuarioCliente: {
+      model: "usuario"
+    },
+    pedidosCli: {
+      collection: "pedido",
+      via: "clientePedido"
     },
   },
 };

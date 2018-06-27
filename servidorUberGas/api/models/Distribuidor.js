@@ -7,34 +7,51 @@
 module.exports = {
 
   attributes: {
-    DistriRuc:{
-      type:"Number"
+    id:{
+      type:"number"
     },
-    DistriNombre:{
-      type:"String"
+    nombre:{
+      type:"string"
     },
-    DistriEmail:{
-      type: "String"
+    apellido:{
+      type: "string"
     },
-    DistriMovil:{
-      type:"Number"
+    telefono:{
+      type:"number"
     },
-    DistriTelefono:{
-      type:"NUmber"
+    email:{
+      type:"string"
     },
-    DistriDireccion:{
-      type: "String"
+    estado:{
+      type: "number"
     },
-    DistriEstado:{
-      type: "Number"
+    distriRuc:{
+      type:"number"
     },
-    UsuariosDistri:{
-      collection:"Distribuidor",
-      via:"DistribuidorId"
+    distriNombre:{
+      type:"string"
+    },
+    distriEmail:{
+      type: "string"
+    },
+    distriMovil:{
+      type:"number"
+    },
+    distriTelefono:{
+      type:"number"
+    },
+    distriDireccion:{
+      type: "string"
+    },
+    distriEstado:{
+      type: "number"
+    },
+    usuarioDis:{
+      model:"usuario",
     },
     vendedorDistribuidor:{
-      collection:"Vendedor",
-      via:"DistribuidorId"
+      collection:"vendedor",
+      via:"distribuidorId"
     },
   },
 };

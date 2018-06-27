@@ -8,16 +8,16 @@
 module.exports = {
 
   attributes: {
-    DetPedCantidad:{
+    detPedCantidad:{
       type:"Number"
     },
-    DetPedDescripcion:{
+    detPedDescripcion:{
       type:"String"
     },
-    DetPedPrecioUnitario:{
+    detPedPrecioUnitario:{
       type: "Number"
     },
-    PedidoId:{
+    pedidoId:{
       model:"Pedido"
     },
   },

@@ -8,20 +8,20 @@
 module.exports = {
 
   attributes: {
-    GasId:{
-      type:"Number"
+    gasId:{
+      type:"number"
     },
-    GasDescripcion:{
-      type:"String"
+    gasDescripcion:{
+      type:"string"
     },
-    GasPrecioVenta:{
-      type: "Number"
+    gasPrecioVenta:{
+      type: "number"
     },
-    GasTipo:{
-      type:"String"
+    gasTipo:{
+      type:"string"
     },
-    GasEstado:{
-      type:"Number"
+    gasEstado:{
+      type:"number"
     },
   },
 };

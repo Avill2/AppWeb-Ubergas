@@ -7,26 +7,29 @@
 module.exports = {
 
   attributes: {
-    UsrNick:{
-      type:"String"
+    usrNick:{
+      type:"string"
     },
-    UsrPassword:{
-      type:"String"
+    usrPassword:{
+      type:"string"
     },
-    UsrEstado:{
-      type: "Number"
+    usrEstado:{
+      type: "number"
     },
-    UsrRol:{
-      type:"String"
+    usrRol:{
+      type:"string"
     },
-    UsrUltimoAcceso:{
-      type:"Date"
+    usrUltimoAcceso:{
+      type:"date"
     },
-    PersonaId:{
-      model:"Persona"
+    distribuidor:{
+      model:"distribuidor"
     },
-    DistribuidorId:{
-      model:"Distribuidor"
-    }
+    cliente:{
+      model:"cliente"
+    },
+    vendedor:{
+      model:"vendedor"
+    },
   },
 };
